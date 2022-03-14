@@ -30,6 +30,33 @@ public class CalculadoraTest {
     }
 
     @Test
+    public void testeSubtracao() {
+        double esperado = 1.9;
+        double resultado = calculadora.subtracao(5.5, 3.6);
+
+        System.out.println("Teste Subtração");
+        assertEquals(esperado, resultado, "Resultado de subtração não esperado!");
+    }
+
+    @Test
+    public void testeDivisao() {
+        double esperado = 6.8;
+        double resultado = calculadora.divisao(34, 5);
+
+        System.out.println("Teste Divisão");
+        assertEquals(esperado, resultado, "Resultado de divisão não esperado!");
+    }
+
+    @Test
+    public void testeMultiplicacao() {
+        double esperado = 143;
+        double resultado = calculadora.multiplicacao(13, 11);
+
+        System.out.println("Teste Multiplicação");
+        assertEquals(esperado, resultado, "Resultado de multiplicacao não esperado!");
+    }
+
+    @Test
     public void testeDivisaoZero() {
         System.out.println("Teste divisão por zero");
         ArithmeticException arithmeticException = assertThrows(ArithmeticException.class,
