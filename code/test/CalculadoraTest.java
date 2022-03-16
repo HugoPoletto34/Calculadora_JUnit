@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.*;
 
-/* import org.junit.internal.runners.statements.ExpectException; */
-
 public class CalculadoraTest {
 
     Calculadora calculadora;

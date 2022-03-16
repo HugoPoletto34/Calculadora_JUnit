@@ -1,7 +1,4 @@
-/* import java.util.List; */
-
 public class Calculadora {
-    /* private List<Double> inputs; */
 
     public double soma(double a, double b){
         return a + b;
